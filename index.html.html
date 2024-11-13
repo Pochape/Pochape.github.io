@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .section, .benefit-card, .workflow-step, .highlight-box, .conclusion {
+                break-inside: avoid;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #0052cc, #003380);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+        .benefit-card {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #0052cc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .workflow {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 20px;
+        }
+        .workflow-step {
+            text-align: center;
+            padding: 25px;
+            margin: 10px;
+            background-color: #e8f0ff;
+            border-radius: 10px;
+            width: 250px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .highlight-box {
+            background-color: #e8f0ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0052cc;
+        }
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #003380;
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid #0052cc;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #0052cc;
+            font-size: 1.4em;
+        }
+        p, li {
+            color: #333333;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .conclusion {
+            background-color: #f1f8e9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #7cb342;
+        }
+        .important-note {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MTT : Thérapie Médicale d'Entraînement</h1>
+            <p style="font-size: 1.3em; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-weight: 500; letter-spacing: 0.5px; margin-top: 15px; color: #ffffff;">Une approche thérapeutique innovante dans le système de santé suisse</p>
+        </div>
+
+        <div class="section">
+            <h2>Contexte et Problématique</h2>
+            <p>Dans notre société moderne, l'évolution de la connaissance et de la technologie ont significativement augmenté les comportements sédentaires. L'inactivité physique qui en résulte représente un danger majeur pour la santé des individus.</p>
+            
+            <div class="important-note">
+                <h3>Réponse du système de santé</h3>
+                <p>Le système de tarification de la LAMal (Assurance de base) propose une solution concrète : la possibilité pour le médecin de prescrire un <strong>forfait pour thérapie médicale d'entraînement (MTT)</strong> (Code 7340) auprès de physiothérapeutes qualifiés.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Structure du Programme MTT</h2>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <h3>Anamnèse</h3>
+                    <p>Évaluation complète de l'historique et du contexte médical du patient</p>
+                </div>
+                <div class="workflow-step">
+                    <h3>Évaluation</h3>
+                    <p>Analyse approfondie des capacités et besoins spécifiques</p>
+                </div>
+                <div class="workflow-step">
+                    <h3>Programme Personnalisé</h3>
+                    <p>Instruction et adaptation d'un programme d'entraînement physique sur mesure</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Organisation des 9 séances prescrites</h3>
+                <ul>
+                    <li><strong>2 séances avec accompagnement physiothérapeute (code 7301)</strong>
+                        <ul>
+                            <li>Généralement réparties en bilan initial et final</li>
+                            <li>Organisation flexible selon les besoins</li>
+                        </ul>
+                    </li>
+                    <li><strong>7 séances en autonomie (code 7340)</strong>
+                        <ul>
+                            <li>Réalisation du programme d'entraînement personnalisé</li>
+                            <li>Sans présence directe du physiothérapeute</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Bienfaits Scientifiquement Prouvés</h2>
+            <p>Les publications scientifiques démontrent une liste croissante de bénéfices liés à l'activité physique, tant dans le traitement que dans la prévention des maladies chroniques :</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🫀 Cardiovasculaire</h3>
+                    <p>Réduction significative des facteurs de risques cardio-vasculaires</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🦴 Musculo-squelettique</h3>
+                    <p>Optimisation du système musculo-squelettique</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🎗️ Protection</h3>
+                    <p>Diminution du risque de développement de cancers</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🧠 Santé Mentale</h3>
+                    <p>Amélioration significative du profil psychologique</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🏥 Hospitalisation</h3>
+                    <p>Réduction du nombre et de la durée des hospitalisations</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🏠 Autonomie</h3>
+                    <p>Amélioration de l'indépendance à domicile du patient âgé</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🧩 Alzheimer</h3>
+                    <p>Diminution de l'incidence de la maladie d'Alzheimer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Applications et Bénéfices</h2>
+            
+            <div class="highlight-box">
+                <h3>Utilisations Multiples</h3>
+                <ul>
+                    <li><strong>Phase intermédiaire</strong> avant :
+                        <ul>
+                            <li>La réathlétisation en fitness</li>
+                            <li>La reprise d'activité sportive</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pour les personnes âgées déconditionnées :</strong>
+                        <ul>
+                            <li>Récupération des capacités physiques</li>
+                            <li>Rupture du cercle vicieux du déconditionnement</li>
+                            <li>Amélioration de la confiance en soi</li>
+                            <li>Impact positif sur la qualité de vie</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="important-note">
+                <h3>Objectifs pour le Patient</h3>
+                <ul>
+                    <li>Devenir actif dans sa prise en charge</li>
+                    <li>Développer son autonomie</li>
+                    <li>Être responsable et comprendre sa santé</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2>Mise en Place du MTT</h2>
+            <p>En tant que physiothérapeute, vous êtes le mieux placé pour évaluer la pertinence du MTT pour vos patients. Si vous estimez que cette approche est appropriée :</p>
+            <ul>
+                <li>Proposez-la au médecin référent dans le cadre d'un bilan (initial, intermédiaire ou final)</li>
+                <li>Discutez-en avec votre patient</li>
+                <li>Utilisez la brochure informative pour présenter :
+                    <ul>
+                        <li>Le concept MTT</li>
+                        <li>Les objectifs fixés avec le patient</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="signature">
+                <p>Pour toute question ou information complémentaire, je reste à votre entière disposition.</p>
+                <p>À très bientôt,</p>
+                <p><strong>Thierry Mur</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
